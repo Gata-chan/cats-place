@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV Gallery</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<script type="text/javascript" href="lang.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="cats-place-logo.svg" alt="logo">
+			<span>Cat's Place</span>
+		</div>
+		<div class="header-pages">
+			<a href="index.html">
+			<p class="en">&nbsp;Home&nbsp;</p>
+			<p class="ru">&nbsp;Главная&nbsp;</p></a>
+			
+			<nav>
+  				<label for="touch" id="touch"><a href="gallery.html">
+  					<span class="lab en page-selected g-bug">&nbsp; Gallery &nbsp; &#11045;</span>
+  					<span class="lab ru page-selected">&nbsp; Галерея &#11045;</span></a>
+  				</label>    
+  				<ul class="slide">
+  					<li class="en"><a href="#">Web</a></li> 
+  					<li class="ru"><a href="#">Веб</a></li>
+    				<li class="en"><a href="#">Print</a></li>
+    				<li class="ru"><a href="#">Печать</a></li>
+    				<li class="en"><a href="#">Banners</a></li>
+    				<li class="ru"><a href="#">Баннеры</a></li>
+    				<li class="en"><a href="#">Branding</a></li>
+    				<li class="ru"><a href="#">Брендинг</a></li>
+    				<li class="en"><a href="#">Illustrations</a></li>
+    				<li class="ru"><a href="#">Иллюстрации</a></li>
+    				<li class="en"><a href="#">Divided by employers</a></li>
+    				<li class="ru"><a href="#">Разделение по работам</a></li>
+  				</ul>
+			</nav>
+			<a href="experience.html">
+			<p class="en">Experience</p>
+			<p class="ru">Опыт</p></a>
+			<a href="skills.html">
+			<p class="en">Skills</p>
+			<p class="ru">Навыки</p></a>
+			<a href="#">
+			<p class="en">Contacts</p>
+			<p class="ru">Связаться</p></a>
+		</div>
+		<fieldset class="header-switch">
+	    	<input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+	    	<label for="language-toggle"></label>
+	    	<span class="on">EN</span>
+	   		<span class="off">RU</span>
+		</fieldset>
+	</header>
+	<main>
+		<p>blah</p>
+		<div class="grid" data-masonry='{ "itemSelector": ".masonry-brick", "gutter": 7 }'>
+  			<div class="masonry-brick"><img src="https://i.imgur.com/Gw2LXoD.png" alt="lady"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/d9TF9Be.png" alt="guy"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/gfsXCMF.png" alt="lady"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/acZeFTD.png" alt="lady"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/qtUdDE1.png" alt="lady"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/KuQ5sRK.png" alt="lady"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/VYqMlmP.png" alt="lad"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/8SLw9O4.png" alt="lad"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/zDpwmEr.png" alt="lad"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/tRCgS6w.png" alt="lad"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/C3LeAy8.png" alt="lady"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/ocmaU1u.png" alt="lad"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/H3fNJGh.png" alt="lad"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/riTWm1z.png" alt="lad"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/pl6qCBo.png" alt="lady"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/5hTZ3qO.png" alt="lad"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/1WDjisv.png" alt="lads"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/mlwScjj.png" alt="lads"></div>
+			<div class="masonry-brick"><img src="https://i.imgur.com/L8QYHMv.png" alt="lads"></div>
+		</div>
+	</main>
+	<footer>
+		<p>©2024 Zlobina Alexandra
+			<br>
+			<br>
+		All rights reserved</p>
+	</footer>
+	<script type="text/javascript">
+		function show (bb) {
+			bb.style.display = 'block';
+		};
+		function hide (bb) {
+			bb.style.display = 'none';
+		};
+		var grid = document.querySelector('.grid');
+var msnry;
+
+imagesLoaded( grid, function() {
+  // init Isotope after all images have loaded
+  msnry = new Masonry( grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
+});
+		document.getElementById("language-toggle").onclick = function () {
+    if ($(this).is(":checked")) {
+    	for(var i=0; i < document.getElementsByClassName("en").length; i++) { 
+  			show(document.getElementsByClassName("ru")[i]);
+  			hide(document.getElementsByClassName("en")[i]);
+		}
+
+    } else {
+        for(var i=0; i < document.getElementsByClassName("en").length; i++) { 
+  			show(document.getElementsByClassName("en")[i]);
+  			hide(document.getElementsByClassName("ru")[i]);
+		}
+    }
+};
+	</script>
+</body>
+</html>
