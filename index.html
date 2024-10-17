@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 	<script type="text/javascript" href="lang.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
 	<script async src="https://imgbb.com/upload.js"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -168,36 +169,6 @@
 			<br>
 		All rights reserved</p>
 	</footer>
-	<script type="text/javascript">
-		function ctc(hh) {
-			navigator.clipboard.writeText("catsoulisme@gmail.com");
-		};
-		function ctc1(hh) {
-			navigator.clipboard.writeText("@CatSoulIsMe");
-		};
-		function ctc2(hh) {
-			navigator.clipboard.writeText("+79090566540");
-		};
-		function show (bb) {
-			bb.style.display = 'block';
-		};
-		function hide (bb) {
-			bb.style.display = 'none';
-		};
-		document.getElementById("language-toggle").onclick = function () {
-    if ($(this).is(":checked")) {
-    	for(var i=0; i < document.getElementsByClassName("en").length; i++) { 
-  			show(document.getElementsByClassName("ru")[i]);
-  			hide(document.getElementsByClassName("en")[i]);
-		}
-
-    } else {
-        for(var i=0; i < document.getElementsByClassName("en").length; i++) { 
-  			show(document.getElementsByClassName("en")[i]);
-  			hide(document.getElementsByClassName("ru")[i]);
-		}
-    }
-};
-	</script>
+	
 </body>
 </html>
