@@ -876,12 +876,12 @@ footer p {
 
 
 .skills-main {
-	color: #282022;
+	background-color: #282022;
 }
 
 .skills-header {
 	display: flex;
-	font: "Lora";
+	font-family: "Lora";
 	font-weight: bold;
 	color: #E9CDC5;
 }
