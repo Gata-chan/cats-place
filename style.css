@@ -846,13 +846,13 @@ footer p {
 	column-count: 2;
 	column-gap: 5px;
 	@media (min-width: 768px) {
-	  column-count: 3;
+	  column-count: 2;
 	}
 	@media (min-width: 992px) {
-	  column-count: 4;
+	  column-count: 3;
 	}
 	@media (min-width: 1199px) {
-	  column-count: 5;
+	  column-count: 4;
 	}
 	.brick {
 	  box-sizing: border-box;
@@ -874,3 +874,14 @@ footer p {
 
 
 
+
+.skills-main {
+	color: #282022;
+}
+
+.skills-header {
+	display: flex;
+	font: "Lora";
+	font-weight: bold;
+	color: #E9CDC5;
+}
