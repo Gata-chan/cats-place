@@ -779,7 +779,7 @@ footer p {
 	justify-content: space-around;
 	align-items: center;
 	margin-bottom: 30px;
-	background-image: url(exp-call-to-action-bg.svg);
+	background-image: url(imgs/exp-call-to-action-bg.svg);
 	background-repeat: no-repeat;
 	background-position: center 145px;
 	background-size: 120%;
@@ -882,6 +882,68 @@ footer p {
 .skills-header {
 	display: flex;
 	font-family: "Lora";
-	font-weight: bold;
 	color: #E9CDC5;
+	margin: 0px 40px;
+}
+
+.skills-header h1 {
+	font-size: 96px;
+	font-weight: normal;
+	margin: 50px 0px 40px 50px; 
+}
+
+.skills-list {
+	margin: 0px 40px 60px 40px;
+	color: #C2887E;
+	font-family: "Ubuntu";
+	font-size: 34px;
+}
+
+.skills-list li {
+	margin: 20px 0;
+}
+
+.skills-programs-info {
+	margin: 0px 40px;
+	padding: 10px 60px;
+	border: #E8DED4 3px solid;
+	border-radius: 30px;
+	font-family: "Ubuntu";
+}
+
+.skills-programs-info h3 {
+	color: #E8CCC4;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+}
+
+.skills-programs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 70px;
+}
+
+.skills-program {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 0;
+	color: #E8DED4;
+	font-size: 24px;
+	text-wrap: wrap;
+}
+
+.skills-program img {
+	transition: 0.15s ease-out;
+	height: 120px;
+	width: 120px;
+	
+}
+
+.skills-program img:hover {
+	transition: all 300ms cubic-bezier(.47,1.94,.21,.6);
+	transform: scale(1.2);
+	filter: brightness(120%);
 }
