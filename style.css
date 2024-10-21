@@ -581,6 +581,10 @@ footer p {
 	transition: .4s ease;
 }
 
+.home-contacts-item:hover {
+	cursor: pointer;
+}
+
 .home-contacts-item:hover img {
 	filter: hue-rotate(150deg);
 	transition: .4s ease;
@@ -601,6 +605,11 @@ footer p {
 	width: 85%;
 	background-color: #C2887E;
 	margin: 20px auto;
+}
+
+.home-contacts-item:active img {
+	transform: scale(1.1);
+	transition: 0.3s cubic-bezier(.47,1.94,.21,.6);
 }
 
 
