@@ -14,7 +14,7 @@ function hide (bb) {
     bb.style.display = 'none';
 };
     
-const localLang = window.localStorage.getItem('lang')
+var localLang = window.localStorage.getItem('lang')
 
 
 
@@ -42,16 +42,18 @@ window.onload = function(){
                 hide(document.getElementsByClassName("en")[i]);
                     
             }
-            window.localStorage.setItem('lang', 'ru')
+            window.localStorage.setItem('lang', 'ru');
+            localLang = window.localStorage.getItem('lang')
             
                 
         } else {
-            for(var i=0; i < document.getElementsByClassName("en").length; i++) { 
+            for(var i=0; i < document.getElementsByClassName("ru").length; i++) { 
                 show(document.getElementsByClassName("en")[i]);
                 hide(document.getElementsByClassName("ru")[i]);
                     
             }
-            window.localStorage.setItem('lang', 'eng')
+            window.localStorage.setItem('lang', 'eng');
+            localLang = window.localStorage.getItem('lang')
         }
     };
         
