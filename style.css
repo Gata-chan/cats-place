@@ -342,8 +342,8 @@ footer p {
 }
 
 .hero {
-	margin-top: -250px;
-	width: 553px;
+	margin-top: -170px;
+	width: 753px;
 	filter: drop-shadow(3px 5px 6px rgb(0 0 0 / 0.4));
 }
 
@@ -478,6 +478,7 @@ footer p {
 
 .home-gallery img {
 	max-height: 60vh;
+	max-width: 95%;
 	-webkit-box-shadow: 0px 2px 17px 0px rgba(194,136,126,0.6);
 	-moz-box-shadow: 0px 2px 17px 0px rgba(194,136,126,0.6);
 	box-shadow: 0px 2px 17px 0px rgba(194,136,126,0.6);
@@ -504,6 +505,7 @@ footer p {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
     -webkit-box-shadow: 0px 2px 17px 0px rgba(40,32,34,0.3), 0px 0px 0px 3px rgba(232, 222, 212, 1) inset;
 	-moz-box-shadow: 0px 2px 17px 0px rgba(40,32,34,0.3), 0px 0px 0px 3px rgba(232, 222, 212, 1) inset;
 	box-shadow: 0px 2px 17px 0px rgba(40,32,34,0.3), 0px 0px 0px 3px rgba(232, 222, 212, 1) inset;
@@ -563,6 +565,7 @@ footer p {
 	font-weight: bold;
 	color: #E8DED4;
 	font-size: 48px;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -1223,6 +1226,17 @@ footer p {
 }
 
 
+
+@media (max-width: 1440px) {
+	.home-name {
+		font-size: 5.4em;
+	}
+	.ru.home-welcome-text br{
+		display: none;
+	}
+}
+
+
 @media (max-width: 1340px) {
 	header {
 		height: 162px;
@@ -1250,4 +1264,33 @@ footer p {
 	.header-pages p {
 		margin: 0 15px;
 	}
+
+	.home-name {
+		font-size: 4.7em;
+	}
+
+	.hero-bg-circle {
+		margin-top: 160px;
+		width: 50vw;
+		height: 50vw;
+	}
+
+	.home-contacts-content-header p.ru {
+		font-size: 25px;
+	}
+
+	.home-contacts-content {
+		max-width: 60%;
+	}
+
+	.home-contacts-header h1 {
+		font-size: 75px;
+	}
+
+	.home-contacts-header h1.ru {
+		font-size: 65px;
+	}
+
+	
 }
+
