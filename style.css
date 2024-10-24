@@ -826,6 +826,7 @@ footer p {
 
 .exp-btm-btn {
 	transition: 0.2s ease;
+	text-align: center;
 	position: relative;
 	display: inline-block;
 	background-color: #758F8A;
@@ -1062,7 +1063,7 @@ footer p {
 }
 
 .skills-btm-btn:hover {
-	background-color: #d3978c;
+	background-color: #C07676;
 	transform: scale(1.05);
 	transition: 0.2s ease;
 }
@@ -1091,7 +1092,6 @@ footer p {
 	font-size: 80px;
 	padding-left: 20px;
 	margin: 30px 0;
-	
 }
 
 .gallery-divider {
@@ -1220,7 +1220,7 @@ footer p {
 }
 
 .gallery-btm-btn:hover {
-	background-color: #d3978c;
+	background-color: #C07676;
 	transform: scale(1.05);
 	transition: 0.2s ease;
 }
@@ -1233,6 +1233,9 @@ footer p {
 	}
 	.ru.home-welcome-text br{
 		display: none;
+	}
+	.home-contacts-content-header {
+		margin: 20px;
 	}
 }
 
@@ -1254,15 +1257,21 @@ footer p {
 	}
 
 	.header-pages {
-		margin-top: 96px;
+		margin-top: 81px;
 		top: 0;
+		flex-wrap: wrap;
 		left: 2.5vw;
 		width: 95vw;
 		justify-content: space-between;
 	}
 
 	.header-pages p {
-		margin: 0 15px;
+		margin: 15px;
+	}
+
+	.header-pages nav {
+		margin: 15px;
+		order: 3;
 	}
 
 	.home-name {
@@ -1275,22 +1284,82 @@ footer p {
 		height: 50vw;
 	}
 
-	.home-contacts-content-header p.ru {
-		font-size: 25px;
+	.home-works-header {
+		text-align: center;
 	}
 
 	.home-contacts-content {
-		max-width: 60%;
+		width: 100%;
+		margin-top: 20px;
 	}
 
-	.home-contacts-header h1 {
-		font-size: 75px;
+	.home-contacts {
+		flex-direction: column;
 	}
 
-	.home-contacts-header h1.ru {
-		font-size: 65px;
+	.home-contacts-header {
+		width: calc(100% - 50px);
+		margin-right: 0;
 	}
 
+	.home-contacts-header h1 br {
+		display: none;
+	}
+}
+
+@media (max-width: 860px) {
+	header {
+		height: 230px;
+	}
+
+	.header-pages p {
+		margin-bottom: 0;
+	}
+
+	.header-pages nav {
+		margin-bottom: 0;
+	}
+
+	.exp-main {
+		padding: 0 13px;
+	}
+
+	.exp-card-button {
+		text-align: center;
+	}
+
+	.skills-header h1 {
+		font-size: 80px;
+	}
+
+	.exp-card-date {
+		padding: 20px;
+	}
+
+	.exp-card-date div {
+		flex-direction: column-reverse;
+	}
+
+	.exp-date-sum {
+		margin-top: 20px !important;
+	}
+
+	.exp-card-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 	
+}
+
+@media (max-width: 700px) {
+	.skills-header h1 {
+		font-size: 65px;
+		margin-left: 20px;
+	}
+
+	.exp-title p {
+		font-size: 60px;
+	}
 }
 
