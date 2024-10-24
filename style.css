@@ -41,7 +41,7 @@ header {
 	display: flex;
 	position: absolute;
 	top: 20px;
-	left: 25vw;
+	left: calc(50% - 402px);
 	align-content: center;
 }
 
@@ -471,16 +471,21 @@ footer p {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 50px;
+	margin: 30px auto;
 }
 
 .home-gallery img {
-	margin: 20px auto;
-	height: 490px;
-	width: auto;
+	max-height: 60vh;
 	-webkit-box-shadow: 0px 2px 17px 0px rgba(194,136,126,0.6);
 	-moz-box-shadow: 0px 2px 17px 0px rgba(194,136,126,0.6);
 	box-shadow: 0px 2px 17px 0px rgba(194,136,126,0.6);
+}
+
+.home-gallery img:last-child {
+	max-height: none;
+	max-width: 95%;
 }
 
 .home-contacts {
@@ -1215,4 +1220,34 @@ footer p {
 	background-color: #d3978c;
 	transform: scale(1.05);
 	transition: 0.2s ease;
+}
+
+
+@media (max-width: 1340px) {
+	header {
+		height: 162px;
+		align-items: start;
+	}
+
+	.logo {
+		margin-top: 20px;
+		margin-left: 25px;
+	}
+
+	.header-switch {
+		margin-top: 20px;
+		margin-right: 25px;
+	}
+
+	.header-pages {
+		margin-top: 96px;
+		top: 0;
+		left: 2.5vw;
+		width: 95vw;
+		justify-content: space-between;
+	}
+
+	.header-pages p {
+		margin: 0 15px;
+	}
 }
