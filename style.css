@@ -946,6 +946,9 @@ footer p {
 	color: #C2887E;
 	font-family: "Ubuntu";
 	font-size: 34px;
+	columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
 .skills-list li {
@@ -960,7 +963,7 @@ footer p {
 	padding: 5px 20px;
 	margin: 0;
 	width: auto;
-	border-radius: 60px;
+	border-radius: 30px;
 }
 
 .skills-programs-info {
@@ -1384,6 +1387,61 @@ footer p {
 		height: 50vh;
 		max-width: 90vw;
 		margin-top: -120px;
+	}
+	.exp-title {
+		margin: 15px;
+	}
+	.exp-card {
+		margin: 15px;
+	}
+	.exp-title-border {
+		width: 40px;
+	}
+	.exp-title p {
+		font-size: 34pt;
+		margin: 0;
+	}
+	.exp-card-date {
+        padding: 5px;
+    }
+	.exp-card-date p{
+		font-size: 15pt;
+	}
+	.exp-date-sum {
+		font-size: 15pt;
+	}
+	.exp-card-content {
+		margin: 15px;
+	}
+	.exp-card-content-header p{
+		font-size: 16pt;
+	}
+	.exp-card-content-header a{
+		font-size: 13pt;
+	}
+	.exp-card-content-main p{
+		font-size: 16pt;
+	}
+	.exp-card-content-main li{
+		font-size: 13pt;
+	}
+	.exp-card-content-main ul {
+		padding-inline-start: 20px;
+	}
+	.exp-card-button {
+		padding: 10px;
+	}
+	.exp-card-button a{
+		font-size: 16pt;
+	}
+	.exp-btm-cta p {
+		font-size: 34pt;
+	}
+	.exp-btm-btn {
+		padding: 10px;
+	}
+	.exp-btm-btn a {
+		font-size: 16pt;
 	}
 }
 
