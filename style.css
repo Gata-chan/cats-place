@@ -1225,7 +1225,11 @@ footer p {
 	transition: 0.2s ease;
 }
 
-
+@media (max-width: 2000px) and (min-width: 1600px) {
+	.home-welcome-screen {
+		padding: 30px 5%;
+	}
+}
 
 @media (max-width: 1440px) {
 	.home-name {
