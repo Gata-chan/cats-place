@@ -1398,7 +1398,7 @@ footer p {
 		width: 40px;
 	}
 	.exp-title p {
-		font-size: 34pt;
+		font-size: 32pt;
 		margin: 0;
 	}
 	.exp-card-date {
@@ -1433,6 +1433,9 @@ footer p {
 	}
 	.exp-card-button a{
 		font-size: 16pt;
+	}
+	.exp-btm-cta {
+		margin: 10px 15px 25px 15px;
 	}
 	.exp-btm-cta p {
 		font-size: 34pt;
@@ -1490,8 +1493,11 @@ footer p {
 		font-size: 13pt;
 	}
 	.home-welcome-text {
-		margin-top: 68px;
+		margin-top: 40px;
 		font-size: 20pt;
+	}
+	.hero {
+		margin-top: -80px;
 	}
 	.home-name {
 		font-size: 37pt;
@@ -1517,7 +1523,7 @@ footer p {
 		padding: 20px;
 	}
 	.hero-bg-circle {
-		margin-top: 110px;
+		margin-top: 80px;
 	}
 	.home-line {
 		display: none;
