@@ -1446,6 +1446,69 @@ footer p {
 	.exp-btm-btn a {
 		font-size: 16pt;
 	}
+	.skills-header {
+		margin: 0 25px;
+		align-items: center;
+	}
+	.skills-header h1 {
+		font-size: 34pt;
+		margin: 15px 5px 0 5px;
+	}
+	.skills-header img {
+		height: 80px;
+		width: 80px;
+		margin-top: 10px;
+		margin-right: 20px;
+	}
+	.skills-list {
+		columns: 1;
+    	-webkit-columns: 1;
+    	-moz-columns: 1;
+		font-size: 16pt;
+		margin: 0 20px 20px 20px;
+		padding-inline-start: 25px;
+	}
+	.skills-programs-info {
+		margin: 0 20px;
+		padding: 10px;
+	}
+	.skills-programs-info h3 {
+		font-size: 18pt;
+		margin: 10px;
+	}
+	.skills-programs {
+		column-gap: 20px;
+	}
+	.skills-program {
+		font-size: 12pt;
+	}
+	.skills-program img {
+		height: 80px;
+		width: 80px;
+	}
+	.skills-cta {
+		padding: 10px 0 20px 0;
+	}
+	.skills-cta p {
+		font-size: 34pt;
+		margin: 10px 0 20px 0;
+	}
+	.skills-cta p.ru {
+		font-size: 34pt;
+	}
+	.skills-btm-btn {
+		padding: 10px 20px;
+	}
+	.skills-btm-btn a {
+		font-size: 16pt;
+	}
+	.skills-btm-btn a.ru {
+		font-size: 16pt;
+	}
+	.skills-list li:hover {
+		margin-left: -20px;
+		border-radius: 20px;
+	}
 }
 
 @media (max-width: 400px) {
@@ -1578,5 +1641,7 @@ footer p {
 	.home-contact-info {
 		font-size: 17pt;
 	}
-
+	.skills-header img {
+		display: none;
+	}
 }
