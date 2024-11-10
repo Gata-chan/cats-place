@@ -1228,6 +1228,31 @@ footer p {
 	transition: 0.2s ease;
 }
 
+
+
+.contacts-main {
+	padding-top: 30px;
+	background-color: #E8CCC4;
+}
+
+.contacts-img {
+	width: 35%;
+	height: auto;
+	margin-right: 60px;
+	filter: drop-shadow(1px 3px 8px rgb(40 32 34 / 0.3));
+}
+
+.contacts.home-contacts {
+	background-color: #E8CCC4;
+	padding-bottom: 0;
+}
+
+.contacts.home-contacts-content {
+	border-radius: 30px 30px 0 0;
+}
+
+
+
 @media (max-width: 2000px) and (min-width: 1600px) {
 	.home-welcome-screen {
 		padding: 30px 5%;
