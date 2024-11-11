@@ -863,12 +863,13 @@ footer p {
 
 
 .container {
-	width: 100%;
+	width: 95%;
 	display: block;
 	margin: 0 auto;
 }
 
 .masonry {
+	margin-top: 30px;
 	column-count: 2;
 	column-gap: 5px;
 	@media (min-width: 768px) {
@@ -886,11 +887,17 @@ footer p {
 	  page-break-inside: avoid;
 	  break-inside: avoid;
 	  counter-increment: brick-counter;
+	  transition: 0.15s;
 	}
 	.brick img {
 	  width: 100%;
 	  height: 100%;
 	  object-fit: cover;
+	  border-radius: 5px;
+	}
+	.brick:hover {
+		transition: 0.3s cubic-bezier(.47,1.94,.21,.6);
+		transform: scale(1.1);
 	}
   }
 

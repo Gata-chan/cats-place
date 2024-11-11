@@ -7,6 +7,9 @@ function ctc1() {
 function ctc2() {
     navigator.clipboard.writeText("+79090566540");
 };
+function ctc3() {
+    navigator.clipboard.writeText("https://shorturl.at/RTNvU");
+};
 function show (bb) {
     bb.style.display = 'block';
 };
