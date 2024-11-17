@@ -582,6 +582,11 @@ footer p {
 	align-items: center;
 	font-family: "Ubuntu";
 	font-size: 24px;
+	color: #282022;
+}
+
+.home-contacts-item a {
+	color: #282022;
 }
 
 .home-contacts-item img {
@@ -1238,13 +1243,12 @@ footer p {
 
 
 .contacts-main {
-	padding-top: 30px;
 	background-color: #E8CCC4;
 }
 
 .contacts-img {
-	width: 35%;
-	height: auto;
+	width: auto;
+	height: 100vh;
 	margin-right: 60px;
 	filter: drop-shadow(1px 3px 8px rgb(40 32 34 / 0.3));
 }
@@ -1252,6 +1256,7 @@ footer p {
 .contacts.home-contacts {
 	background-color: #E8CCC4;
 	padding-bottom: 0;
+	justify-content: space-evenly;
 }
 
 .contacts.home-contacts-content {
@@ -1344,6 +1349,23 @@ footer p {
 	.home-contacts-header h1 br {
 		display: none;
 	}
+
+	.contacts.home-contacts {
+		flex-direction: row;
+	}
+
+	.contacts.home-contacts-content {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 1100px) {
+	.contacts.home-contacts {
+		flex-direction: column;
+	}
+	.contacts-img {
+		display: none;
+	}
 }
 
 @media (max-width: 860px) {
@@ -1388,6 +1410,28 @@ footer p {
 		flex-direction: column;
 		justify-content: space-between;
 	}
+
+	.gallery-header h1 {
+		font-size: 65px;
+	}
+
+	.gallery-category a {
+		width: 320px;
+		height: 320px;
+	}
+	.gallery-category {
+		width: 320px;
+		height: 320px;
+	}
+	.gallery-category img {
+		width: 320px;
+		height: 320px;
+	}
+	.gallery-category-name {
+		top: 240px;
+		height: 80px;
+		font-size: 26px;
+	}
 	
 }
 
@@ -1403,6 +1447,49 @@ footer p {
 }
 
 @media (max-width: 500px) {
+	.logo span {
+		display: none;
+	}
+	.logo {
+		margin-top: 26px;
+	}
+	.logo img {
+		height: 46px;
+		width: auto;
+	}
+	.header-pages a {
+		font-size: 20pt;
+	}
+	.lab {
+		font-size: 20pt;
+	}
+	.slide li a {
+		font-size: 20pt;
+	}
+	.illu {
+		font-size: 19pt !important;
+	}
+	nav {
+		width: 190px;
+	}
+	#touch:hover + .slide {
+		height: 300px;
+	}
+	.slide {
+		border-radius: 0 0 15px 15px;
+	}
+	header {
+        height: 225px;
+	}
+	.g-bug {
+		padding: 5px;
+	}
+	.gg-bug {
+		padding: 5px;
+	}
+	footer p {
+		font-size: 13pt;
+	}
 	.home-welcome-screen {
 		flex-direction: column-reverse;
 		height: auto;
@@ -1419,6 +1506,39 @@ footer p {
 		height: 50vh;
 		max-width: 90vw;
 		margin-top: -120px;
+	}
+	.home-contacts {
+		padding: 20px;
+	}
+	.home-contacts-header h1 {
+		font-size: 34pt;
+	}
+	.home-contacts-header h1.ru {
+		font-size: 34pt;
+	}
+	.home-contacts-header p {
+		font-size: 18pt;
+		margin-bottom: 0;
+	}
+	.home-contacts-content-header {
+		padding: 10px;
+		border-radius: 30px;
+	}
+	.home-contacts-content-header p.ru {
+		font-size: 18pt;
+	}
+	.home-contacts-content-header p {
+		font-size: 18pt;
+	}
+	.home-contacts-item {
+		font-size: 14pt;
+		text-align: center;
+	}
+	.home-contacts-item img {
+		display: none;
+	}
+	.home-contact-info {
+		font-size: 17pt;
 	}
 	.exp-title {
 		margin: 15px;
@@ -1541,52 +1661,52 @@ footer p {
 		margin-left: -20px;
 		border-radius: 20px;
 	}
+	.gallery-header h1 {
+        font-size: 34pt;
+		margin-top: 10px;
+		margin-bottom: 20px;
+    }
+	.gallery-categories {
+		gap: 30px;
+	}
+	.gallery-cta {
+		padding: 10px 0 20px 0;
+	}
+	.gallery-cta p {
+		font-size: 34pt;
+		margin: 0px 0 20px 0;
+	}
+	.gallery-cta p.ru {
+		font-size: 34pt;
+	}
+	.gallery-btm-btn {
+		padding: 10px 20px;
+	}
+	.gallery-btm-btn a {
+		font-size: 16pt;
+	}
+	.gallery-btm-btn a.ru {
+		font-size: 16pt;
+	}
+	.contacts-img {
+		display: block;
+		width: 50vw;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 418px) {
+	header {
+        height: 275px;
+	}
 }
 
 @media (max-width: 400px) {
-	.logo span {
-		display: none;
-	}
-	.logo {
-		margin-top: 26px;
-	}
-	.logo img {
-		height: 46px;
-		width: auto;
-	}
-	.header-pages a {
-		font-size: 20pt;
-	}
-	.lab {
-		font-size: 20pt;
-	}
-	.slide li a {
-		font-size: 20pt;
-	}
-	.illu {
-		font-size: 19pt !important;
-	}
-	nav {
-		width: 190px;
-	}
-	#touch:hover + .slide {
-		height: 300px;
-	}
-	.slide {
-		border-radius: 0 0 15px 15px;
-	}
 	header {
-        height: 265px;
+        height: 275px;
 	}
-	.g-bug {
-		padding: 5px;
-	}
-	.gg-bug {
-		padding: 5px;
-	}
-	footer p {
-		font-size: 13pt;
-	}
+	
 	.home-welcome-text {
 		margin-top: 40px;
 		font-size: 20pt;
@@ -1640,39 +1760,7 @@ footer p {
 	.home-gallery img:last-child {
 		display: none;
 	}
-	.home-contacts {
-		padding: 20px;
-	}
-	.home-contacts-header h1 {
-		font-size: 34pt;
-	}
-	.home-contacts-header h1.ru {
-		font-size: 34pt;
-	}
-	.home-contacts-header p {
-		font-size: 18pt;
-		margin-bottom: 0;
-	}
-	.home-contacts-content-header {
-		padding: 10px;
-		border-radius: 30px;
-	}
-	.home-contacts-content-header p.ru {
-		font-size: 18pt;
-	}
-	.home-contacts-content-header p {
-		font-size: 18pt;
-	}
-	.home-contacts-item {
-		font-size: 14pt;
-		text-align: center;
-	}
-	.home-contacts-item img {
-		display: none;
-	}
-	.home-contact-info {
-		font-size: 17pt;
-	}
+	
 	.skills-header img {
 		display: none;
 	}
