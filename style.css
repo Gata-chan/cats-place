@@ -873,10 +873,26 @@ footer p {
 	margin: 0 auto;
 }
 
+.mas-vvs.masonry {
+	column-count: 2;
+}
+
+.mas-cc.masonry {
+	column-count: 2;
+	@media (min-width: 768px) {
+	  column-count: 2;
+	}
+	
+	@media (min-width: 1199px) {
+	  column-count: 3;
+	}
+}
+
 .masonry {
 	margin-top: 30px;
 	column-count: 2;
 	column-gap: 5px;
+	
 	@media (min-width: 768px) {
 	  column-count: 2;
 	}
@@ -885,6 +901,9 @@ footer p {
 	}
 	@media (min-width: 1199px) {
 	  column-count: 4;
+	  .mas-cc {
+		column-count: 3;
+	  }
 	}
 	.brick {
 	  box-sizing: border-box;
