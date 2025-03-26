@@ -873,20 +873,7 @@ footer p {
 	margin: 0 auto;
 }
 
-.mas-vvs.masonry {
-	column-count: 2;
-}
 
-.mas-cc.masonry {
-	column-count: 2;
-	@media (min-width: 768px) {
-	  column-count: 2;
-	}
-	
-	@media (min-width: 1199px) {
-	  column-count: 3;
-	}
-}
 
 .masonry {
 	margin-top: 30px;
